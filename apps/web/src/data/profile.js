@@ -1,6 +1,7 @@
 export const profile = {
   name: 'Samuel Santana',
   role: 'Desenvolvedor Full-Stack e Automações',
+  primaryRole: 'Desenvolvedor Full-Stack',
   shortRole: 'Desenvolvedor de software',
   education: 'Formado em Análise e Desenvolvimento de Sistemas',
   email: 'samuelsantanadasilva8@gmail.com',

@@ -13,20 +13,27 @@ import { Toaster } from '@/components/ui/toaster';
 import LinksPage from '@/pages/LinksPage';
 import FreelancerPage from '@/pages/FreelancerPage';
 import AiConsultingPage from '@/pages/AiConsultingPage';
+import { siteRoutes } from '@/data/routes';
+import TechnologyShowcase from '@/components/TechnologyShowcase';
+import { fullStackTechnologies } from '@/data/technologies';
 
 function App() {
   const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
 
-  if (pathname === '/links') {
+  if (pathname === siteRoutes.links || pathname === '/links') {
     return <LinksPage />;
   }
 
-  if (pathname === '/freelancer') {
+  if (pathname === siteRoutes.freelancer) {
     return <FreelancerPage />;
   }
 
-  if (pathname === '/consultoria-ia') {
+  if (pathname === siteRoutes.aiConsulting) {
     return <AiConsultingPage />;
+  }
+
+  if (pathname !== siteRoutes.fullStack) {
+    return <LinksPage />;
   }
 
   return (
@@ -41,9 +48,13 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <TechnologyShowcase
+            technologies={fullStackTechnologies}
+            subtitle="Stack full-stack para construir produtos modernos, integrações confiáveis e soluções escaláveis."
+          />
+          <Contact />
           <Experience />
           <Projects />
-          <Contact />
         </main>
         <Footer />
         <WhatsAppButton />

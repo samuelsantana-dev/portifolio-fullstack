@@ -1536,3 +1536,228 @@
 - url: http://localhost:3000/links
 - title: Hostinger Horizons
 
+## 2026-09-12 20:01:57.389Z load
+- url: http://localhost:3000/links
+- title: Hostinger Horizons
+
+## 2026-09-12 20:01:58.578Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Professor e Consultoria de Programação em Projetos e Automações"}
+
+## 2026-09-12 20:01:58.756Z load
+- url: http://localhost:3000/consultoria-ia
+- title: Hostinger Horizons
+
+## 2026-09-12 20:02:00.917Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:02:01.082Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:02:01.269Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:02:06.018Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:05:03.902Z load
+- url: http://localhost:3000/consultoria-ia
+- title: Hostinger Horizons
+
+## 2026-09-12 20:05:57.051Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:06:10.807Z load
+- url: http://localhost:3000/
+- title: Hostinger Horizons
+
+## 2026-09-12 20:06:10.912Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s frameborder frameBorder 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:06:10.914Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s referrerpolicy referrerPolicy 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:06:10.915Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s allowfullscreen allowFullScreen 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:06:21.165Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Portfólio Freelancer"}
+
+## 2026-09-12 20:06:21.341Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:06:24.081Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:06:26.942Z load
+- url: http://localhost:3000/consultoria-ia
+- title: Hostinger Horizons
+
+## 2026-09-12 20:07:04.133Z load
+- url: http://localhost:3000/
+- title: Hostinger Horizons
+
+## 2026-09-12 20:07:09.984Z load
+- url: http://localhost:3000/samuel-full-stack
+- title: Hostinger Horizons
+
+## 2026-09-12 20:07:10.232Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s frameborder frameBorder 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:07:10.235Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s referrerpolicy referrerPolicy 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:07:10.238Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s allowfullscreen allowFullScreen 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:11:26.672Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:12:05.580Z load
+- url: http://localhost:3000/consultoria-ia
+- title: Hostinger Horizons
+
+## 2026-09-12 20:12:19.985Z load
+- url: http://localhost:3000/freelancer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:12:22.100Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:12:22.272Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:12:22.467Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Desenvolvedor Full-Stack e Automações"}
+
+## 2026-09-12 20:22:48.878Z load
+- url: http://localhost:3000/link
+- title: Hostinger Horizons
+
+## 2026-09-12 20:22:52.342Z load
+- url: http://localhost:3000/samuel-full-stack
+- title: Hostinger Horizons
+
+## 2026-09-12 20:22:52.614Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s frameborder frameBorder 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:22:52.617Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s referrerpolicy referrerPolicy 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:22:52.618Z console.error
+- text: 
+    Warning: Invalid DOM property `%s`. Did you mean `%s`?%s allowfullscreen allowFullScreen 
+        at iframe
+        at div
+        at div
+        at MotionComponent (http://localhost:3000/node_modules/.vite/deps/framer-motion.js?v=df09a857:942:40)
+        at div
+        at section
+        at About (http://localhost:3000/src/components/About.jsx?t=1789242761888:10:21)
+        at main
+        at div
+        at App
+
+## 2026-09-12 20:22:55.916Z load
+- url: http://localhost:3000/developer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:22:59.363Z load
+- url: http://localhost:3000/developer
+- title: Hostinger Horizons
+
+## 2026-09-12 20:23:38.533Z click
+- element: {"tag":"section","role":null,"ariaLabel":null,"name":null,"type":null,"id":"experience","placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Experiência ProfissionalMinha trajetória profissional construindo soluções web modernas e escaláveisDesenvolvedor Full-Stack e AutomaçõesClivy CompanyJaneiro 2026 - Junho 2026•RemotoDesenvolvimento de aplicações full-stack e automações, com integração de APIs, modelagem de dados, autenticação, observabilidade e colaboração com times multidisciplinares em rituais ágeis.ReactNext.jsReact Hook FormReduxJotaiChakra UIPrismaNestJSNode.jsExpress.jsSequelizegRPCPHPSwaggerOpenAPISocketsn8nAWSDesenvolvedor Full-StackStart TecnologiaAbril 2025 - Julho 2025•RemotoDesenvolvimento de aplicações web modernas utilizando React, Next.js e TypeScript. Implementação de interfaces responsivas, integração com APIs RESTful, e otimização de performance.ReactNext.jsTypeScriptTailwind CSSGraphQLFigmaRedux ToolkitFramer MotionDesenvolvedor Full-StackCogno TechFevereiro 2025 - Maio 2025•RemotoDesenvolvimento com React e gerenciamento de estado com React Query e Redux Toolkit. Implementação de design system, componentes reutilizáveis, testes unitários e integrações com APIs.ReactNext.jsRedux ToolkitZustandStyled ComponentsStorybookWebpackDesenvolvedor Full-StackLusa TecnologiasJunho 2024 - Março 2025•RemotoDesenvolvimento de aplicações com React 19 e TypeScript. Implementação de arquitetura Clean Code, padrões de design, bibliotecas internas, testes automatizados e documentação técnica.React 19TypeScriptNext.jsShopify LiquidDesign SystemTesting LibraryGitHub ActionsDesenvolvedor Full-StackPipe TechJaneiro 2024 - Janeiro 2025•RemotoIntegração de APIs RESTful e GraphQL, desenvolvimento de interfaces com React, implementação de autenticação JWT/OIDC, e criação de sistemas escaláveis com Node.js.ReactNode.jsGraphQLJWTAzure DevOpsWordPressMongoDBDesenvolvedor Full-StackAutônomoJaneiro 2023 - Janeiro 2024•RemotoDesenvolvimento de soluções personalizadas com TypeScript, Node.js e MongoDB. Criação de interfaces responsivas, APIs escaláveis, arquitetura limpa e testes automatizados.TypeScriptNode.jsMon..."}
+

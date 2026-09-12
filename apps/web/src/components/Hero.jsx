@@ -98,7 +98,7 @@ const Hero = () => {
                 {profile.name}
               </h1>
               <p className="text-2xl md:text-3xl text-gray-300 font-semibold">
-                {profile.role}
+                {profile.primaryRole}
               </p>
             </motion.div>
 

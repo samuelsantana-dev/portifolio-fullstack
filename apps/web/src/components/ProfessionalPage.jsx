@@ -1,8 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, GraduationCap, MessageCircle } from 'lucide-react';
+import FeatureHighlight from '@/components/FeatureHighlight';
+import BusinessCta from '@/components/BusinessCta';
 import ProfileIdentity from '@/components/ProfileIdentity';
-import { getWhatsAppUrl } from '@/data/profile';
+import ResultsCta from '@/components/ResultsCta';
+import ServiceBanner from '@/components/ServiceBanner';
+import TechnologyShowcase from '@/components/TechnologyShowcase';
+import { getWhatsAppUrl, profile } from '@/data/profile';
 
 const ProfessionalPage = ({
   eyebrow,
@@ -10,6 +15,11 @@ const ProfessionalPage = ({
   description,
   heroIcon: HeroIcon,
   services,
+  highlight,
+  businessCta,
+  resultsCta,
+  serviceBanner,
+  technologies,
   skills,
   steps,
   ctaTitle,
@@ -81,7 +91,13 @@ const ProfessionalPage = ({
         </div>
       </section>
 
-      <section className="bg-slate-900/50 px-4 py-20">
+      {serviceBanner && <ServiceBanner {...serviceBanner} whatsappHref={whatsappUrl} />}
+
+      <FeatureHighlight {...highlight} ctaHref={whatsappUrl} />
+
+      {technologies && <TechnologyShowcase technologies={technologies} />}
+
+      <section id="servicos" className="bg-slate-900/50 px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Como posso ajudar</h2>
@@ -105,6 +121,16 @@ const ProfessionalPage = ({
           </div>
         </div>
       </section>
+
+      {businessCta && (
+        <BusinessCta
+          {...businessCta}
+          primaryHref={`mailto:${profile.email}?subject=${encodeURIComponent(businessCta.emailSubject)}`}
+          secondaryHref={whatsappUrl}
+        />
+      )}
+
+      {resultsCta && <ResultsCta {...resultsCta} ctaHref={whatsappUrl} />}
 
       <section className="px-4 py-20">
         <div className="mx-auto max-w-6xl">

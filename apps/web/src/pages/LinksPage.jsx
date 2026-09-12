@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { BookOpen, Facebook, Github, Instagram, Linkedin, MessageCircle, Youtube } from 'lucide-react';
 import ProfileIdentity from '@/components/ProfileIdentity';
 import { getWhatsAppUrl, profile } from '@/data/profile';
+import { siteRoutes } from '@/data/routes';
 
 const LinksPage = () => {
   const socialLinks = [
@@ -14,8 +15,9 @@ const LinksPage = () => {
   ];
 
   const profileLinks = [
-    { label: 'Professor e Consultoria de Programação em Projetos e Automações', href: '/consultoria-ia', internal: true },
-    { label: 'Portfólio', href: '/freelancer', internal: true },
+    { label: 'Portfólio Full-Stack', href: siteRoutes.fullStack, internal: true, icon: Github },
+    { label: 'Portfólio Freelancer', href: siteRoutes.freelancer, internal: true },
+    { label: 'Consultoria em IA e Tecnologia', href: siteRoutes.aiConsulting, internal: true },
     { label: 'Mundo de Sucesso: Consultoria e Desenvolvimento', href: profile.links.blog, icon: BookOpen },
     { label: 'Canal no YouTube', href: profile.links.youtube, icon: Youtube },
   ];
@@ -71,10 +73,6 @@ const LinksPage = () => {
               </motion.a>
             ))}
           </div>
-
-          <a href="/" className="mt-10 text-sm font-semibold text-slate-600 transition-colors hover:text-blue-600">
-            ← Voltar ao portfólio
-          </a>
         </div>
       </main>
     </>
