@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, GraduationCap, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 import FeatureHighlight from '@/components/FeatureHighlight';
 import BusinessCta from '@/components/BusinessCta';
 import ProfileIdentity from '@/components/ProfileIdentity';
 import ResultsCta from '@/components/ResultsCta';
 import ServiceBanner from '@/components/ServiceBanner';
 import TechnologyShowcase from '@/components/TechnologyShowcase';
+import PageNavigation from '@/components/PageNavigation';
 import { getWhatsAppUrl, profile } from '@/data/profile';
 
 const ProfessionalPage = ({
@@ -36,6 +37,7 @@ const ProfessionalPage = ({
           <div className="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl" />
         </div>
         <div className="relative mx-auto max-w-4xl text-center">
+          <PageNavigation />
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -168,23 +170,6 @@ const ProfessionalPage = ({
                 <p className="mt-3 leading-relaxed text-gray-400">{step.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-4 py-20">
-        <div className="mx-auto max-w-4xl rounded-2xl border border-cyan-400/25 bg-gradient-to-br from-blue-500/15 to-cyan-500/10 p-8 sm:p-10">
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-400/15">
-              <GraduationCap className="h-7 w-7 text-cyan-300" />
-            </div>
-            <div>
-              <h2 className="text-2xl font-bold text-white">Aulas remotas de tecnologia</h2>
-              <p className="mt-3 leading-relaxed text-gray-300">
-                Também atuo como professor de tecnologia. Ofereço aulas particulares e mentorias somente de forma remota, com cobrança por hora, adaptadas ao seu nível e objetivo.
-              </p>
-              <p className="mt-3 flex items-center gap-2 text-sm text-cyan-200"><CheckCircle2 className="h-4 w-4" /> Conteúdos práticos, acompanhamento individual e foco em aplicação real.</p>
-            </div>
           </div>
         </div>
       </section>

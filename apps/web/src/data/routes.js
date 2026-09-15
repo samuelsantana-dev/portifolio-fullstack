@@ -2,5 +2,5 @@ export const siteRoutes = {
   links: '/',
   fullStack: '/samuel-full-stack',
   freelancer: '/developer',
-  aiConsulting: '/consultoria-ia',
+  aiConsulting: '/consulting-software-ia',
 };

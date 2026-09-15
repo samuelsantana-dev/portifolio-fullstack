@@ -1,8 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { BookOpen, Facebook, Github, Instagram, Linkedin, MessageCircle, Youtube } from 'lucide-react';
 import ProfileIdentity from '@/components/ProfileIdentity';
+import PageNavigation from '@/components/PageNavigation';
+import Seo from '@/components/Seo';
 import { getWhatsAppUrl, profile } from '@/data/profile';
 import { siteRoutes } from '@/data/routes';
 
@@ -15,22 +16,23 @@ const LinksPage = () => {
   ];
 
   const profileLinks = [
-    { label: 'Portfólio Full-Stack', href: siteRoutes.fullStack, internal: true, icon: Github },
-    { label: 'Portfólio Freelancer', href: siteRoutes.freelancer, internal: true },
-    { label: 'Consultoria em IA e Tecnologia', href: siteRoutes.aiConsulting, internal: true },
-    { label: 'Mundo de Sucesso: Consultoria e Desenvolvimento', href: profile.links.blog, icon: BookOpen },
-    { label: 'Canal no YouTube', href: profile.links.youtube, icon: Youtube },
+    { label: 'Portfólio Full-Stack', href: siteRoutes.fullStack, target: '_blank', internal: true, icon: Github },
+    { label: 'Portfólio Freelancer', href: siteRoutes.freelancer, target: '_blank', internal: true },
+    { label: 'Consultoria', href: siteRoutes.aiConsulting, target: '_blank', internal: true },
+    { label: 'Mundo de Sucesso: Consultoria e Desenvolvimento', href: profile.links.blog, target: '_blank', icon: BookOpen },
+    { label: 'Canal no YouTube', href: profile.links.youtube, target: '_blank', icon: Youtube },
   ];
 
   return (
     <>
-      <Helmet>
-        <title>Samuel Santana | Links Profissionais</title>
-        <meta name="description" content="Links profissionais, conteúdos e projetos de Samuel Santana." />
-      </Helmet>
+      <Seo
+        title="Samuel Santana | Desenvolvedor Full-Stack e Automações"
+        description="Links profissionais, portfólio, serviços de desenvolvimento, consultoria em IA e conteúdos de Samuel Santana."
+      />
 
       <main className="min-h-screen bg-[#e9faff] px-4 py-14 text-[#142956] sm:py-20">
         <div className="mx-auto flex w-full max-w-sm flex-col items-center text-center">
+          <PageNavigation variant="light" />
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, y: 0 }}

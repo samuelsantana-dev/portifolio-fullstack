@@ -1,15 +1,17 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Briefcase, Code2, Database, Layout, Plug, Rocket, Workflow } from 'lucide-react';
 import ProfessionalPage from '@/components/ProfessionalPage';
+import Seo from '@/components/Seo';
 import { freelancerTechnologies } from '@/data/technologies';
 
 const FreelancerPage = () => (
   <>
-    <Helmet>
-      <title>Samuel Santana | Desenvolvedor Freelancer</title>
-      <meta name="description" content="Desenvolvimento freelancer de sites, aplicações web, integrações e automações." />
-    </Helmet>
+    <Seo
+      title="Desenvolvedor Freelancer | Sites, Sistemas e Automações | Samuel Santana"
+      description="Desenvolvimento freelancer de sites, aplicações web, sistemas, integrações e automações sob medida para o seu negócio."
+      path="/developer"
+      service={{ name: 'Desenvolvimento de software freelancer', type: 'Desenvolvimento de sites, sistemas web, integrações e automações' }}
+    />
     <ProfessionalPage
       eyebrow="Desenvolvedor Freelancer"
       title="Produtos digitais que saem da ideia e chegam ao ar"

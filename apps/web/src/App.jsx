@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -16,6 +15,7 @@ import AiConsultingPage from '@/pages/AiConsultingPage';
 import { siteRoutes } from '@/data/routes';
 import TechnologyShowcase from '@/components/TechnologyShowcase';
 import { fullStackTechnologies } from '@/data/technologies';
+import Seo from '@/components/Seo';
 
 function App() {
   const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -38,10 +38,12 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        <title>Samuel Santana - Full-Stack Developer Portfolio</title>
-        <meta name="description" content="Portfolio of Samuel Santana, a Full-Stack Developer specializing in React, Node.js, TypeScript, and modern web technologies. View my projects, experience, and skills." />
-      </Helmet>
+      <Seo
+        title="Samuel Santana | Desenvolvedor Full-Stack"
+        description="Portfólio de Samuel Santana, desenvolvedor Full-Stack especializado em React, Node.js, TypeScript, integrações e automações."
+        path="/samuel-full-stack"
+        service={{ name: 'Desenvolvimento Full-Stack', type: 'Desenvolvimento de aplicações web e integrações' }}
+      />
       <div className="min-h-screen bg-slate-950">
         <Header />
         <main>

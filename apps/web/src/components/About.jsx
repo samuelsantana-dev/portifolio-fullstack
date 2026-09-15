@@ -151,11 +151,11 @@ const About = () => {
         >
           <h3 className="mb-4 text-center text-2xl font-bold text-white">Vídeo em Destaque</h3>
           <div className="aspect-video overflow-hidden rounded-xl border border-blue-500/20 bg-slate-800 shadow-lg">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bWXkYLIndQo?si=8HiH6WYXtYHFa6Kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://youtu.be/bWXkYLIndQo?si=jkaXEVQsVfelaUbC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </motion.div>
 
-S        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
             <motion.div
               key={item.title}
