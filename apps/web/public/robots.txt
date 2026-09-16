@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samuelsantana-dev.mundosucesso.com/sitemap.xml
