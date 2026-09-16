@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Rocket, Users, Award, Download } from 'lucide-react';
+import { ArrowUpRight, BookOpen, Code2, Rocket, Users, Award, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import { profile } from '@/data/profile';
+import VideoHighlight from '@/components/VideoHighlight';
 
 const About = () => {
   const { toast } = useToast();
@@ -142,18 +144,33 @@ const About = () => {
           </motion.div>
         </div>
 
-        <motion.div
+        <div className="mb-16">
+          <VideoHighlight />
+        </div>
+
+        <motion.section
+          id="blog"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-4xl"
+          className="mb-16 rounded-2xl border border-cyan-400/30 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-8 text-center shadow-lg"
         >
-          <h3 className="mb-4 text-center text-2xl font-bold text-white">Vídeo em Destaque</h3>
-          <div className="aspect-video overflow-hidden rounded-xl border border-blue-500/20 bg-slate-800 shadow-lg">
-            <iframe width="560" height="315" src="https://youtu.be/bWXkYLIndQo?si=jkaXEVQsVfelaUbC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </motion.div>
+          <BookOpen className="mx-auto mb-4 h-10 w-10 text-cyan-300" />
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Conteúdo técnico</p>
+          <h2 className="mt-2 text-3xl font-bold text-white">Blog de tecnologia</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-300">
+            Artigos sobre desenvolvimento, automações, inteligência artificial e as tecnologias que uso no dia a dia.
+          </p>
+          <a
+            href={profile.links.blog}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
+          >
+            Acessar o blog <ArrowUpRight className="h-5 w-5" />
+          </a>
+        </motion.section>
 
        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (

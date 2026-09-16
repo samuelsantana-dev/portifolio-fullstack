@@ -6,8 +6,8 @@ const resultIcons = [CalendarCheck, Workflow, BarChart3];
 const ResultsCta = ({ badge, title, accentTitle, description, ctaLabel, ctaHref, pills, cards }) => (
   <section className="relative overflow-hidden bg-slate-950 px-4 py-20 text-white sm:py-24">
     <div className="pointer-events-none absolute inset-0 opacity-40" style={{ backgroundImage: 'radial-gradient(circle at 12% 18%, rgba(96, 165, 250, 0.45) 1.5px, transparent 1.5px), radial-gradient(circle at 84% 68%, rgba(34, 211, 238, 0.35) 1.5px, transparent 1.5px)', backgroundSize: '42px 42px, 54px 54px' }} />
-    <div className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
-    <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-cyan-500/15 blur-3xl" />
+    <div className="pointer-events-none animate-ambient absolute -left-32 top-0 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
+    <div className="pointer-events-none animate-ambient-reverse absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-cyan-500/15 blur-3xl" />
 
     <div className="relative mx-auto max-w-6xl text-center">
       <span className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-blue-300">
@@ -23,7 +23,7 @@ const ResultsCta = ({ badge, title, accentTitle, description, ctaLabel, ctaHref,
         href={ctaHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-700 to-cyan-500 px-7 py-4 font-bold text-white shadow-lg shadow-blue-950 transition-transform hover:scale-[1.02]"
+        className="cta-shimmer mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-700 to-cyan-500 px-7 py-4 font-bold text-white shadow-lg shadow-blue-950 transition-transform hover:scale-[1.02]"
       >
         <MessageCircle className="h-5 w-5" />
         {ctaLabel}
@@ -42,7 +42,7 @@ const ResultsCta = ({ badge, title, accentTitle, description, ctaLabel, ctaHref,
         {cards.map((card, index) => {
           const Icon = resultIcons[index % resultIcons.length];
           return (
-            <article key={card.title} className="p-7 sm:p-9 md:border-r md:border-white/20 md:last:border-r-0">
+            <article key={card.title} className="card-lift p-7 sm:p-9 md:border-r md:border-white/20 md:last:border-r-0">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15">
                 <Icon className="h-5 w-5" />
               </span>

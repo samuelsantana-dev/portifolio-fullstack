@@ -3,7 +3,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 
 const BusinessCta = ({ title, description, primaryLabel, primaryHref, secondaryHref }) => (
   <section className="bg-slate-950 px-4 py-20 sm:py-24">
-    <div className="mx-auto max-w-6xl rounded-3xl border border-blue-400/25 bg-gradient-to-br from-blue-800 via-blue-700 to-cyan-600 px-6 py-16 text-center text-white shadow-2xl shadow-blue-950/60 sm:px-12 sm:py-20">
+    <div className="card-lift mx-auto max-w-6xl rounded-3xl border border-blue-400/25 bg-gradient-to-br from-blue-800 via-blue-700 to-cyan-600 px-6 py-16 text-center text-white shadow-2xl shadow-blue-950/60 sm:px-12 sm:py-20">
       <h2 className="text-4xl font-bold leading-tight sm:text-6xl">{title}</h2>
       <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-blue-50 sm:text-xl">{description}</p>
       <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
